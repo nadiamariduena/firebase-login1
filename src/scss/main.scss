@@ -1,3 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: lemonchiffon;
+  overflow-x: hidden;
+
+  #AppPage {
+    background-color: seagreen;
+    background-image: url(../img/AnnaRosova_metalmagazine-20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login {
+      background-color: rgb(255, 255, 255);
+      width: 60vw;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px;
+
+      .logInContainer {
+        background-color: rgb(255, 255, 255);
+        border-radius: 50% 30% / 50% 50%;
+        border: 10px dotted rgb(251, 255, 0);
+        min-height: 20vh;
+        padding: 60px;
+
+        label {
+          color: rgb(19, 19, 19);
+          margin: 14px 0;
+          display: flex;
+          font-family: monospace;
+
+          font-size: 22px;
+          line-height: 1;
+        }
+
+        input {
+          margin: 3px;
+          height: 30px;
+          padding: 0 10px;
+          outline: none;
+        }
+      }
+      // -----
+      .btnContainer {
+        margin: 10px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        min-height: 20vh;
+        padding: 20px 0;
+
+        .btn1 {
+          border: 1px solid #000;
+          outline: none;
+          margin: 10px;
+          padding: 10px 18px;
+          color: rgb(0, 0, 0);
+          font-size: 16px;
+          letter-spacing: 1px;
+          background: #ffffff;
+          transition: 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+        .par1 {
+          padding: 10px;
+          color: rgb(102, 102, 102);
+          margin: 3px;
+          cursor: pointer;
+          font-family: monospace;
+        }
+        //
+        .btn2 {
+          border: 1px solid #000;
+          outline: none;
+          margin: 10px;
+          padding: 10px 18px;
+          color: rgb(0, 0, 0);
+          font-size: 16px;
+          letter-spacing: 1px;
+          background: #ffffff;
+          transition: 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+        .par2 {
+          padding: 10px;
+          color: rgb(102, 102, 102);
+          margin: 3px;
+          cursor: pointer;
+          font-family: monospace;
+        }
+        span {
+          margin: 10px;
+          font-family: monospace;
+          color: #000;
+        }
+      }
+    }
+  }
+  // -----------------------
+  //    HERO
+  // -----------------------
+
+  .hero {
+    background-color: peru;
+    width: 100vw;
+    height: 100vh;
+  }
 }

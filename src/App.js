@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import fire from "./fire";
-
+import Login from "./comps/login";
+import Hero from "./comps/hero";
 /*
 
                                                              **   1  **
@@ -82,7 +83,7 @@ const App = () => {
 */
 
   const handleSignup = () => {
-    clearErrors;
+    clearErrors();
     fire // here you will start using fire library that you have imported from the fire.js
       .auth() //auth stands for Authentification
       .createUserWithEmailAndPassword(email, password)
@@ -169,13 +170,78 @@ const App = () => {
   //
   //                                --------------------------------------------------------------
   //
+
   return (
     <React.Fragment>
-      <div id="page">
-        <h1>hello world</h1>
+      <div id="AppPage">
+        {/* 
+  
+  the FOLLOWING below means: that it will check if the user has an account ? , if its true, it will send
+          the USER to the hero.js  page , if it s false/ user has no account , it will send him to the Login page
+  
+  */}
+
+        {user ? (
+          <Hero handleLogout={handleLogout} />
+        ) : (
+          <Login
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            handleLogin={handleLogin}
+            handleSignup={handleSignup}
+            hasAccount={hasAccount}
+            setHasAccount={setHasAccount}
+            emailError={emailError}
+            passwordError={passwordError}
+            // All of the 10 props that you are passing here are connected to step 1 of this FILE
+            // THIS PROPS will be passed and used in login.js.
+          />
+        )}
       </div>
     </React.Fragment>
   );
 };
 
 export default App;
+
+/*
+
+
+
+
+  //                                --------------------------------------------------------------
+  //                          BEFORE THE CHANGES
+  //                                --------------------------------------------------------------
+  //
+  return (
+    <React.Fragment>
+      <div id="page">
+        <Login
+          email={email}
+          setEmail={setEmail}
+          password={password}
+          setPassword={setPassword}
+          handleLogin={handleLogin}
+          handleSignup={handleSignup}
+          hasAccount={hasAccount}
+          setHasAccount={setHasAccount}
+          emailError={emailError}
+          passwordError={passwordError}
+          // All of the 10 props that you are passing here are connected to step 1 of this FILE
+          // THIS PROPS will be passed and used in login.js.
+        />
+        <Hero handleLogout={handleLogout}/>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default App;
+
+
+
+
+
+*/
