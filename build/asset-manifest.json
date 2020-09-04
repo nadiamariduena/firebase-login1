@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/firebase-login1/static/css/main.fa061e65.chunk.css",
+    "main.js": "/firebase-login1/static/js/main.8fc61528.chunk.js",
+    "main.js.map": "/firebase-login1/static/js/main.8fc61528.chunk.js.map",
+    "runtime-main.js": "/firebase-login1/static/js/runtime-main.b7b063e7.js",
+    "runtime-main.js.map": "/firebase-login1/static/js/runtime-main.b7b063e7.js.map",
+    "static/js/2.93a1b871.chunk.js": "/firebase-login1/static/js/2.93a1b871.chunk.js",
+    "static/js/2.93a1b871.chunk.js.map": "/firebase-login1/static/js/2.93a1b871.chunk.js.map",
+    "index.html": "/firebase-login1/index.html",
+    "precache-manifest.dfc79c27cd16e01a083323246021aa2b.js": "/firebase-login1/precache-manifest.dfc79c27cd16e01a083323246021aa2b.js",
+    "service-worker.js": "/firebase-login1/service-worker.js",
+    "static/css/main.fa061e65.chunk.css.map": "/firebase-login1/static/css/main.fa061e65.chunk.css.map",
+    "static/js/2.93a1b871.chunk.js.LICENSE.txt": "/firebase-login1/static/js/2.93a1b871.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/firebase-login1/static/media/AnnaRosova_metalmagazine-20.67f4cc60.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7b063e7.js",
+    "static/js/2.93a1b871.chunk.js",
+    "static/css/main.fa061e65.chunk.css",
+    "static/js/main.8fc61528.chunk.js"
+  ]
+}
